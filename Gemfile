@@ -1,34 +1,38 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.2.11'
+gem 'rails', '5.2.4'
 
+gem 'ffi'
 gem 'json_pure'
 gem 'spruz'
-gem 'ffi'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'will_paginate'
 gem 'jquery-rails'
 
-group :assets do
-  gem 'sass-rails'
-  gem 'coffee-rails'
-  gem 'uglifier'
-end
+gem 'coffee-rails'
+gem 'sass-rails'
+gem 'uglifier'
+
+gem 'awesome_nested_set'
+gem 'bootstrap', '~> 4.0.0.beta'
+gem 'responders'
+gem 'will_paginate'
 
 group :development, :test do
-  gem 'rspec-rails'
-  gem 'sqlite3-ruby', :require => 'sqlite3'
-end
-group :production do
-  gem 'pg'
-end
-
-group :test do
-  gem 'page-object'
-  gem 'rspec'
+  gem 'autoprefixer-rails'
   gem 'cucumber'
+  gem 'cucumber-rails', require: false
+  gem 'database_cleaner'
+  gem 'factory_bot'
+  gem 'factory_bot_rails'
+  gem 'jasmine-rails'
+  gem 'mini_racer'
+  gem 'page-object'
+  gem 'rails-controller-testing'
+  gem 'rspec', '~> 3.5'
+  gem 'rspec-activemodel-mocks'
+  gem 'rspec-rails'
+  gem 'sqlite3'
 end
-
